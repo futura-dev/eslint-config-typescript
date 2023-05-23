@@ -28,8 +28,6 @@
     "@commitlint/config-conventional": "^17.6.3",
     "@futura-dev/contributing-gen": "^2.0.14",
     "@futura-dev/cosmodrome": "^1.2.0",
-    "commitlint": "^17.6.3",
-    "eslint-config-prettier": "^8.8.0",
-    "prettier": "^2.8.8"
+    "commitlint": "^17.6.3"
   }
 }
