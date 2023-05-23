@@ -8,5 +8,3 @@ module.exports = {
   eslintrc,
   prettierrc
 };
-
-export default eslintrc;
