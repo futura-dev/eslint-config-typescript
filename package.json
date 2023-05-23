@@ -1,0 +1,32 @@
+{
+  "name": "@futura-dev/eslint-config-typescript",
+  "version": "0.0.1",
+  "description": "Eslint shared configuration for Typescript projects",
+  "main": "index.js",
+  "private": false,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "Futura",
+    "url": "https://github.com/futura-dev",
+    "email": "opensource@futura-dev.com"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/futura-dev/eslint-config-typescript"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.59.5",
+    "@typescript-eslint/parser": "^5.59.5",
+    "eslint": "^8.40.0",
+    "eslint-plugin-import": "^2.27.5"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^17.6.3",
+    "@futura-dev/contributing-gen": "^2.0.14",
+    "@futura-dev/cosmodrome": "^1.2.0",
+    "commitlint": "^17.6.3"
+  }
+}
