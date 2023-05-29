@@ -1,3 +1,0 @@
-LINT_ENABLED=false
-LINT="(.js)$"
-BRANCH_PATTERN_BASE="(\w+/\w+|main)"
