@@ -3,10 +3,6 @@
 module.exports = {
   // parser
   parser: "@typescript-eslint/parser",
-  parserOptions: {
-    project: "tsconfig.json",
-    tsconfigRootDir: __dirname
-  },
 
   // ignore
   ignorePatterns: ["dist", "build"],
@@ -16,7 +12,7 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:prettier/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
   ],
 
   // rules
@@ -38,8 +34,8 @@ module.exports = {
         bracketSpacing: true,
         arrowParens: true,
         endOfLine: "lf",
-        arrowParens: "avoid"
-      }
-    ]
-  }
+        arrowParens: "avoid",
+      },
+    ],
+  },
 };
