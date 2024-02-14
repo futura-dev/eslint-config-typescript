@@ -27,9 +27,11 @@
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.3",
-    "@futura-dev/contributing-gen": "^2.0.14",
-    "@futura-dev/cosmodrome": "^1.2.0",
-    "@futura-dev/cosmokeeper": "^0.1.7",
-    "commitlint": "^17.6.3"
+    "@futura-dev/contributing-gen": "^2.1.0",
+    "@futura-dev/cosmodrome": "^1.4.1",
+    "@futura-dev/cosmokeeper": "^0.1.8",
+    "commitlint": "^17.6.3",
+    "ncu": "^0.2.1",
+    "npm-check-updates": "^16.14.15"
   }
 }
