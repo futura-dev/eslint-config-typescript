@@ -33,7 +33,7 @@ module.exports = {
         trailingComma: "none",
         bracketSpacing: true,
         arrowParens: true,
-        endOfLine: "lf",
+        endOfLine: "auto",
         arrowParens: "avoid",
       },
     ],
