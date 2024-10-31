@@ -1,7 +1,3 @@
-/* eslint-disable no-undef */
-/* eslint-disable @typescript-eslint/no-var-requires */
-const eslintrc = require("./.eslintrc.js");
+import * as eslintrc from './eslint.config.js';
 
-module.exports = {
-  eslintrc,
-};
+export default eslintrc;
