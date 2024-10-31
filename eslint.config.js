@@ -1,10 +1,14 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-require-imports */
 const typescriptEslintParser = require('@typescript-eslint/parser');
-const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
-const prettierEslintPlugin = require('eslint-plugin-prettier/recommended');
-const tseslint = require('typescript-eslint');
+const prettierEslintConfig = require('eslint-plugin-prettier/recommended');
+const typescriptEslintConfig = require('typescript-eslint');
+const eslint = require('@eslint/js');
 
-module.exports = tseslint.config([
-  prettierEslintPlugin,
+module.exports = [
+  eslint.configs.recommended,
+  prettierEslintConfig,
+  ...typescriptEslintConfig.configs.recommended,
   {
     files: ['**/*.js', '**/*.ts'],
     ignores: ['dist', 'build'],
@@ -12,15 +16,10 @@ module.exports = tseslint.config([
       parser: typescriptEslintParser
     },
 
-    plugins: {
-      '@typescript-eslint': typescriptEslintPlugin
-    },
-
     rules: {
       '@typescript-eslint/array-type': 'error',
       '@typescript-eslint/no-explicit-any': 'warn',
       '@typescript-eslint/no-empty-interface': 'error',
-      '@typescript-eslint/no-implicit-any-catch': 'error',
       '@typescript-eslint/no-import-type-side-effects': 'error',
       '@typescript-eslint/explicit-function-return-type': 'error',
 
@@ -32,11 +31,10 @@ module.exports = tseslint.config([
           singleQuote: true,
           trailingComma: 'none',
           bracketSpacing: true,
-          arrowParens: true,
-          endOfLine: 'auto',
-          arrowParens: 'avoid'
+          arrowParens: 'always',
+          endOfLine: 'auto'
         }
       ]
     }
   }
-]);
+];
