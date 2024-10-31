@@ -3,7 +3,7 @@ const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
 const prettierEslintPlugin = require('eslint-plugin-prettier/recommended');
 const tseslint = require('typescript-eslint');
 
-export default tseslint.config([
+module.exports = tseslint.config([
   prettierEslintPlugin,
   {
     files: ['**/*.js', '**/*.ts'],
