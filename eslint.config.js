@@ -1,7 +1,7 @@
-import typescriptEslintParser from '@typescript-eslint/parser';
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
-import prettierEslintPlugin from 'eslint-plugin-prettier/recommended';
-import tseslint from 'typescript-eslint';
+const typescriptEslintParser = require('@typescript-eslint/parser');
+const typescriptEslintPlugin = require('@typescript-eslint/eslint-plugin');
+const prettierEslintPlugin = require('eslint-plugin-prettier/recommended');
+const tseslint = require('typescript-eslint');
 
 export default tseslint.config([
   prettierEslintPlugin,
