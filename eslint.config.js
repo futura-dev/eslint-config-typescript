@@ -1,8 +1,9 @@
 import typescriptEslintParser from '@typescript-eslint/parser';
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin';
 import prettierEslintPlugin from 'eslint-plugin-prettier/recommended';
+import tseslint from 'typescript-eslint';
 
-export default [
+export default tseslint.config([
   prettierEslintPlugin,
   {
     files: ['**/*.js', '**/*.ts'],
@@ -38,4 +39,4 @@ export default [
       ]
     }
   }
-];
+]);
