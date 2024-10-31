@@ -1,6 +1,6 @@
 {
   "name": "@futura-dev/eslint-config-typescript",
-  "version": "2.0.0-alpha.11",
+  "version": "2.0.0-alpha.12",
   "description": "Eslint shared configuration for Typescript projects",
   "main": "index.js",
   "private": false,
@@ -24,8 +24,8 @@
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
-    "typescript-eslint": "^8.12.2",
-    "prettier": "^3.3.3"
+    "prettier": "^3.3.3",
+    "typescript-eslint": "^8.12.2"
   },
   "devDependencies": {
     "@commitlint/config-conventional": "^17.6.3",
