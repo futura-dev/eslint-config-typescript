@@ -11,7 +11,7 @@ module.exports = [
   ...typescriptEslintConfig.configs.recommended,
   {
     files: ['**/*.js', '**/*.ts'],
-    ignores: ['dist', 'build'],
+    ignores: ['dist', 'build', 'node_modules'],
     languageOptions: {
       parser: typescriptEslintParser
     },
