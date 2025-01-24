@@ -22,9 +22,6 @@ module.exports = [
       "@typescript-eslint/no-import-type-side-effects": "error",
       "@typescript-eslint/explicit-function-return-type": "error",
       "import/no-duplicates": "warn",
-      "import/default": "warn",
-      "import/first": "warn",
-      "import/export": "error",
 
       "prettier/prettier": [
         "error",
